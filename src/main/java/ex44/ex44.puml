@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Application {
+    readJson();
+    runUsersSearch();
+}
+
+
+class Inventory {
+    private Map<> inventory
+
+
+    addToInventory(name, price, quantity)
+    searchInventory(string item)
+}
+
+class Product {
+    String name, price, quantity
+
+    constructor()
+}
+
+Application <|-- Inventory
+Inventory <|-- Product
+
+@enduml

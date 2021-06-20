@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Application {
+    getSiteInfo()
+}
+
+
+class Website {
+    getters()
+    setters()
+    createFolder()
+    createSite()
+}
+
+Application <|- Website
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Application {
+    getUser_OutputFile_Name();
+}
+
+class FileEditor {
+    public String replaceWord() //returns new string
+    createNewFile(output file name, string output)
+}
+
+Application <|-- FileEditor
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Application {
+    readFile () {addtoRoster}
+}
+
+class Roster {
+    List<Person> people
+
+    addtoRoster(String first, String last)
+    sortRoster(people)
+    numPeople()
+    outputRoster()
+}
+
+class Person {
+    private String firstName
+    private String lastName
+}
+
+Application *-- Roster
+Roster *-- Person
+
+@enduml

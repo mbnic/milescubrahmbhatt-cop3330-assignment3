@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Application {
+    readFile () {addToRecords}
+}
+
+class Records {
+    List<Person> people
+
+    addToRecords(String first, String last, int salary)
+    outputRecordTable()
+}
+
+class Worker {
+    private String firstName
+    private String lastName
+    private int salary
+}
+
+Application *-- Records
+Records *-- Worker
+
+@enduml

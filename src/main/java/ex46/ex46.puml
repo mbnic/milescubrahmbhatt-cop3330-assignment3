@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Application {
+   String readFile()
+}
+
+class WordCounter {
+    Map <String, Int> words
+
+    countWords() //new words get sent to newWord
+    sortWordCounts()
+    printWordCounts()
+}
+
+Application --|> WordCounter
+
+@enduml
