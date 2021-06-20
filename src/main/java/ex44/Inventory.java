@@ -27,10 +27,14 @@ public class Inventory {
         if (inventory.containsKey(userItem)) {
             Products p = inventory.get(userItem);
             System.out.printf("Name: %s\nPrice: %s\nQuantity: %s\n", p.name, p.price, p.quantity);
+
+            //return false to terminate program
             return false;
         }
         else {
             System.out.print("Sorry, that product was not found in our inventory.\n");
+
+            //return true so user can keep asking for products
             return true;
         }
     }
