@@ -9,11 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class WebsiteTest {
 
-    @Test
-    void createSite() {
-
-
-    }
 
     @Test
     void createSiteFolder() {
