@@ -11,15 +11,16 @@ import java.util.Scanner;
 
 public class Application {
     public static void main (String[] args) {
+        Application app = new Application();
         Roster roster = new Roster();
-        readFile(roster);
+        app.readFile(roster);
         String output = roster.getSortedOutput();
         System.out.println(output);
     }
 
 
     //read a file and send names to roster
-    public static void readFile(Roster roster) {
+    public void readFile(Roster roster) {
        Scanner in;
 
        try {

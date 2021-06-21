@@ -14,13 +14,14 @@ public class Application {
 
     //main method
     public static void main(String[] args) {
+        Application app = new Application();
         Inventory inventory = new Inventory();
-        readJSON(inventory);
+        app.readJSON(inventory);
         runUserSearch(inventory);
     }
 
     //read json file
-    public static void readJSON(Inventory inventory) {
+    public void readJSON(Inventory inventory) {
 
         try {
             //create parser and make json file an object

@@ -19,7 +19,7 @@ public class WordCounter {
 
         //print map values
         for (String key: sortedWords.keySet()) {
-            System.out.printf("%-10s %-15s\n", key + ":", getDots(words.get(key)));
+            System.out.printf("%-10s %s\n", key + ":", getDots(words.get(key)));
 
         }
     }

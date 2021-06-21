@@ -14,8 +14,10 @@ public class Application {
 
     //main
     public static void main(String[] args) {
+        Application app = new Application();
+
         //get file input
-        String input = readFile();
+        String input = app.readFile();
 
         //send to word counter
         WordCounter wordCounter = new WordCounter();
@@ -28,7 +30,7 @@ public class Application {
 
 
     //readFile
-    public static String readFile() {
+    public String readFile() {
         String input = "";
         Path filename = Paths.get("src/main/java/ex46/exercise46_input.txt");
 

@@ -37,12 +37,10 @@ public class Website {
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
-
-
     }
 
 
-    //creates the directory to hold our new website skelly
+    //creates the directory for website extras
     public void createExtrasFolders() {
 
         if (jsChoice.equals("y"))

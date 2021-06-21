@@ -34,6 +34,7 @@ public class Roster {
                 else if (o1.getLastName().compareToIgnoreCase(o2.getLastName()) < 0)
                     return -1;
 
+                //if they have same last name compare first name
                 else {
                     if (o1.getFirstName().compareToIgnoreCase(o2.getFirstName()) > 0)
                         return 1;
@@ -61,7 +62,7 @@ public class Roster {
         //start building output
         StringBuilder output = new StringBuilder("Total of " + people.size() + " names");
 
-        output.append("\n------------------");
+        output.append("\n-----------------");
 
         for (Person person : people) {
             output.append("\n" + person.getLastName() + " " + person.getFirstName());

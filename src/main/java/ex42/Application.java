@@ -11,14 +11,15 @@ import java.util.Scanner;
 public class Application {
 
     public static void main (String[] args) {
+        Application app = new Application();
         Records records = new Records();
-        readFile(records);
+        app.readFile(records);
         records.outputRecordTable();
     }
 
 
     //read a file and send names to records
-    public static void readFile(Records records) {
+    public void readFile(Records records) {
         Scanner in;
 
         try {

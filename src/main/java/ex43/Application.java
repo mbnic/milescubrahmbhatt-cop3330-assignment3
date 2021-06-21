@@ -13,13 +13,14 @@ public class Application {
 
     public static void main(String[] args) {
         Website website = new Website();
-        getSiteInfo(website);
+        Application app = new Application();
+        app.getSiteInfo(website);
         website.createSiteFolder();
         website.createSite();
         website.createExtrasFolders();
     }
 
-    public static void getSiteInfo(Website website) {
+    public void getSiteInfo(Website website) {
         System.out.print("Site name: ");
         website.setSiteName(in.next());
 
